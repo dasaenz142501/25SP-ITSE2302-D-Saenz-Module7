@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shirt Order Form</title>
+    <link rel="stylesheet" href="css\styles.css" />
+  </head>
+  <body>
+    <header class="heading">
+      <div class="store-info">
+        <h1>Shirts Unlimited</h1>
+        <p><em>The only place to find your shirts</em></p>
+      </div>
+      <div class="contact-info">
+        <p>123 Shirt Store Way, Waco TX 78340</p>
+        <p><em>270-165-8805</em></p>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Reviews</a>
+    </nav>
+
+    <h2 class="page-title">Shirt Order Form</h2>
+
+    <main class="form-layout">
+      <form id = "product-page" class="order-form">
+        <fieldset>
+          <legend><em>Order Form</em></legend>
+
+          <label>Email <input id="email" type="email"/></label>
+          <label>Company Name <input id="compname" type="text" /></label>
+          <label>Last Name <input id="lastname" type="text" /></label>
+
+          <label>
+            <input id="Bulk" type="radio" name="orderType" value="bulk" />
+            Bulk Order (150.00 Per box)
+          </label>
+
+          <label>
+            <input id = "notBulk" type="radio" name="orderType" value="small" />
+            Order below 100 shirts ($5 each)
+          </label>
+
+          <label
+            ><em>How many? (If bulk has been checked enter the amount of boxes)</em>
+            <input id = "quantity" type="number" min="1" />
+          </label>
+
+          <label>
+            <input id= "delivery" type="checkbox" />
+            Will you require delivery service? ($120)
+          </label>
+
+          <label>
+            <input id= "custom" type="checkbox" />
+            Will you require a custom graphic? ($150)
+          </label>
+
+          <label>
+            <input id= "LS" type="checkbox" />
+            <em>Long sleeve shirts? (+$5 each, or $200 per box)</em>
+          </label>
+
+          <p>Design 1 or 2</p>
+          <label>1 <input id = "des1" type="radio" name="design" value="1" /></label>
+          <label>2 <input id= "des2" type="radio" name="design" value="2" /></label>
+
+          <div class="form-buttons">
+            <button id = "submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <section class="design-images">
+        <p>Design 1</p>
+        <img id="d1" class="design-img" src="Images/desg1.png" alt="design1" />
+        <p>Design 2</p>
+        <img id="d2" class="design-img" src="Images/desg2.png" alt="design2" />
+      </section>
+    </main>
+    <footer><p>© 2024 Diego Saenz. All rights reserved.</p></footer>
+    <script src="js/jscode.js"></script>
+  </body>
+</html>
